@@ -1,0 +1,86 @@
+{
+/*
+	 // Place your snippets for JavaScript React here. Each snippet is defined under a snippet name and has a prefix, body and
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+*/
+	 "Print to console": {
+			"prefix": "log",
+			"body": [
+				"console.log('$1');",
+				"$2"
+			],
+			"description": "Log output to console"
+		},
+		"Create react class": {
+			"prefix": "cls",
+			"body": [
+				"import React from 'react';",
+				"",
+				"class $1 extends React.Component {",
+				"  render() {",
+				"		 return (",
+				"      $2",
+				"		 );",
+				"	 }",
+				"}",
+				"",
+				"export default $1;"
+
+			],
+			"description": "Create a react class"
+		},
+		"Create react pure function": {
+			"prefix": "fun",
+			"body": [
+				"import React from 'react';",
+				"",
+				"function $1 (props) {",
+				"  return (",
+				"    $2",
+				"  );",
+				"}",
+				"",
+				"$1.propTypes = {};",
+				"",
+				"export default $1;",
+				""
+			]
+		},
+		"Create constructor": {
+			"prefix": "cons",
+			"body": [
+				"constructor(props) {",
+				"  super(props);",
+				"  this.state = {",
+				"    $1",
+				"  };",
+				"}"
+			],
+			"description": "Create a react contructor"
+		},
+		"bind": {
+			"prefix": "bin",
+			"body": [
+				"this.$1 = this.$1.bind(this);"
+			],
+			"description": "bind a react class method"
+		},
+		"Define propTypes bloc": {
+			"prefix": "prop",
+			"body": [
+				"$1.propTypes = {",
+				"  $2: React.PropTypes.$3,",
+				"};"
+			],
+			"description": "Define the propTypes"
+		},
+		"Define propTypes": {
+			"prefix": "rprop",
+			"body": [
+				"React.PropTypes.$1,"
+			],
+			"description": "Start of the propType"
+		}
+}
